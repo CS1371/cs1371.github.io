@@ -1,0 +1,82 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: #283c86;  /* fallback for old browsers */
+    background: linear-gradient(141deg, #869BD8, #283C86 30%, #4E4E8A 48%, #379B9B 65%, #41B774 85%, #45A247);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+#mainLogo {
+    width: 100px;
+    height: 100px;
+}
+
+.member-deck {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.member-card {
+    padding: 10px;
+}
+
+.member-name {
+    text-align: center;
+}
+#header h1 {
+    padding-top: 11vh;
+    padding-bottom: 11vh;
+}
+
+.member-image {
+    max-width: 30vh;
+    max-height: 30vh;
+    display: block;
+    font-size: 1000%;
+}
+.member-card {
+    background: #000000;  /* fallback for old browsers */
+    background: linear-gradient(180deg, #cecdcd, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid black;
+    border-radius: 1%;
+    min-width: 285px;
+}
+
+.anchor {
+    display: block;
+    height: 115px; /*same height as header*/
+    margin-top: -115px; /*same height as header*/
+    visibility: hidden;
+}
+
+.member-text {
+    font-size: 125%;
+    text-indent: 10%;
+}
+.member-role {
+    font-size: 150%;
+    font-weight: 100;
+}
+
+#whatWeDo p,
+#whatWeDo li,
+#whyWeDo p,
+#whyWeDo li {
+    font-size: 250%;
+    font-weight: 100;
+}
+#whatWeDo p,
+#whyWeDo p {
+    text-indent: 5%;
+}
+
+footer p {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+a {
+    color: yellow;
+}
