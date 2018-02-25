@@ -25,16 +25,20 @@ body {
 .member-name {
     text-align: center;
 }
-#header h1 {
-    padding-top: 11vh;
-    padding-bottom: 11vh;
+
+#content {
+    margin-top: 50px;
+}
+
+#content > div {
+    margin-bottom: 50px;
 }
 
 .member-image {
-    max-width: 30vh;
-    max-height: 30vh;
+    width: 30vh;
+    height: 30vh;
     display: block;
-    font-size: 1000%;
+    font-size: 5000%;
 }
 .member-card {
     background: #000000;  /* fallback for old browsers */
