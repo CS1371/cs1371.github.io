@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
     background: #283c86;  /* fallback for old browsers */
     background: linear-gradient(141deg, #869BD8, #283C86 30%, #4E4E8A 48%, #379B9B 65%, #41B774 85%, #45A247);
     background-repeat: no-repeat;
@@ -15,8 +15,8 @@ body {
 }
 
 .member-deck {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .member-card {
     padding: 10px;
@@ -26,12 +26,17 @@ body {
     text-align: center;
 }
 
-#content {
-    margin-top: 50px;
+.fixed-top {
+    position: static;
 }
 
-#content > div {
-    margin-bottom: 50px;
+#content {
+    max-width: 90%;
+}
+
+.section-header {
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .member-image {
@@ -68,7 +73,7 @@ body {
 #whatWeDo li,
 #whyWeDo p,
 #whyWeDo li {
-    font-size: 250%;
+    font-size: 175%;
     font-weight: 100;
 }
 #whatWeDo p,
@@ -77,7 +82,8 @@ body {
 }
 
 footer p {
-    font-size: 200%;
+    margin-top: 10px;
+    font-size: 150%;
     font-weight: 100;
 }
 
