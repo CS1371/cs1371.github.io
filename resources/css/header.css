@@ -26,12 +26,9 @@ body {
     text-align: center;
 }
 
-.fixed-top {
-    position: static;
-}
-
 #content {
     max-width: 90%;
+    margin-top: 50px;
 }
 
 .section-header {
