@@ -1,6 +1,4 @@
 body {
-    min-height: 100vh;
-    min-width: 100%;
     background: #283c86;  /* fallback for old browsers */
     background: linear-gradient(141deg, #869BD8, #283C86 30%, #4E4E8A 48%, #379B9B 65%, #41B774 85%, #45A247);
     background-repeat: no-repeat;
@@ -9,54 +7,37 @@ body {
     position: relative;
 }
 
-#mainLogo {
-    width: 100px;
-    height: 100px;
-}
-
-.member-deck {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 .member-card {
     padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .member-name {
     text-align: center;
 }
 
-.fixed-top {
-    position: static;
-}
-
 #content {
     max-width: 90%;
 }
 
-.section-header {
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
 .member-image {
-    width: 30vh;
-    height: 30vh;
+    width: 256px;
+    height: 256px;
     display: block;
     font-size: 5000%;
 }
 .member-card {
     background: #000000;  /* fallback for old browsers */
     background: linear-gradient(180deg, #cecdcd, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border: 1px solid black;
+    border: 0px solid black;
     border-radius: 1%;
     min-width: 285px;
 }
 
 .anchor {
     display: block;
-    height: 115px; /*same height as header*/
-    margin-top: -115px; /*same height as header*/
+    height: 50px; /*same height as header*/
     visibility: hidden;
 }
 
