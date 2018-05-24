@@ -75,3 +75,12 @@ a {
 code {
     color: white;
 }
+
+.navbar-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.navbar-brand {
+    font-weight: 300;
+}
