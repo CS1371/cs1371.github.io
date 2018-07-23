@@ -7,6 +7,10 @@ body {
     position: relative;
 }
 
+.hidden {
+    display: none;
+}
+
 .member-card {
     padding: 10px;
     margin-top: 20px;
