@@ -2,33 +2,33 @@
 
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="Showcase the members of the CS 1371 Software Development Team">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="./resources/css/bootstrap.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script src="resources/scripts/fittext.js"></script>
-	<link rel="stylesheet" href="resources/css/header.css">
-	<script src="resources/scripts/header.js"></script>
-	<link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
-	<title>Software Development</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Showcase the members of the CS 1371 Software Development Team">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./resources/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="resources/scripts/fittext.js"></script>
+    <link rel="stylesheet" href="resources/css/header.css">
+    <script src="resources/scripts/header.js"></script>
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
+    <title>Software Development</title>
 </head>
 <!-- FOR USE AS SECRET
 <div id="newMember" class="card member-card bg-secondary col-sm-4 mx-auto">
-	<div class="card-img-top text-center mx-auto rounded-circle" style="font-size: 225px;">
-		<i class="fas fa-user-secret"></i>
-	</div>
-	<div class="card-body member-body">
-		<h3 class="display-4 card-title member-name text-center">You!</h3>
-		<h4 class="member-role">Software Developer</h4>
-		<p class="card-text member-text">
-			We would <em>love</em> to have you as a developer! Email <a href="mailto:arao81@gatech.edu">Alex</a> to get started!
-		</p>
-	</div>
+    <div class="card-img-top text-center mx-auto rounded-circle" style="font-size: 225px;">
+        <i class="fas fa-user-secret"></i>
+    </div>
+    <div class="card-body member-body">
+        <h3 class="display-4 card-title member-name text-center">You!</h3>
+        <h4 class="member-role">Software Developer</h4>
+        <p class="card-text member-text">
+            We would <em>love</em> to have you as a developer! Email <a href="mailto:arao81@gatech.edu">Alex</a> to get started!
+        </p>
+    </div>
 </div>
 -->
 <!-- FOR USE AS NEW ROW
@@ -46,321 +46,321 @@
 </div>
 -->
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-		<a class="navbar-brand" href="#">
-			<img alt="brand" src="./resources/images/branding/TechTeamBrand.png" class="rounded navbar-logo">
-		</a>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img alt="brand" src="./resources/images/branding/TechTeamBrand.png" class="rounded navbar-logo">
+        </a>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<div class="collapse navbar-collapse" id="mainNavbar">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="#theTeamAnchor"><i class="fas fa-users"></i> Meet The Team</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#whatWeDoAnchor"><i class="fas fa-code"></i> What We Do</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#whyWeDoAnchor"><i class="fab fa-rebel"></i> Why We Do It</a>
-				</li>
-			</ul>
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<button id="muteButton" data-play-music="0" class="btn btn-secondary">
-						<i id="volumeOff" class="fas fa-volume-off"></i>
-						<i id="volumeOn" class="hidden fas fa-volume-up"></i>
-					</button>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div id="content" class="container-fluid">
-		<span class="anchor" id="theTeamAnchor"></span>
-		<div id="theTeam">
-			<div id="meetTheTeam" class="row section-header">
-				<div class="col-12 text-center">
-					<h2 class="display-3"><i class="fas fa-users"></i><br />Meet The Team</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="card-deck member-deck">
-					<div id="arao81" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Alexander Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/arao81.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name">Alexander Rao</h3>
-							<h4 class="member-role">Project Manager</h4>
-							<p class="card-text member-text">
-								Alex has been a TA for three years, and currently leads the Software Development Team at Georgia Tech. Alex is a third year at The Georgia Institute of Technology, where he studies Electrical Engineering and Computer Science. Alex enjoys coding, hacking, and playing Call of Duty.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="card-deck member-deck">
-					<div id="busluel3" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Baran Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/busluel3.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name text-center">Baran Usluel</h3>
-							<h4 class="member-role">Senior Developer</h4>
-							<p class="card-text member-text">
-								Baran is a first semester TA. He is a first year Electrical Engineering major at Georgia Tech. He enjoys coding and making things. He is a bass singer in Georgia Tech's Chamber Choir, and he likes to play Ultimate in his free time.
-								<br />
-								In recognition of his work with <code>engine</code>, <code>generateFeedback</code>, and the Student Selector, Baran was promoted to <strong>Senior Developer</strong> in May of 2018.
-							</p>
-						</div>
-					</div>
-					<div id="hwhite35" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Hannah Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/hwhite35.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name">Hannah White</h3>
-							<h4 class="member-role">Senior Developer</h4>
-							<p class="card-text member-text">
-								Hannah White is a second year Biomedical Engineering Major with a Minor in CS at Georgia Tech. She has been a TA for two semesters. In her free time, she enjoys hanging out with friends, relaxing on the beach, and eating good food.
-								<br />
-								In recognition for her work in writing the <code>Plot</code> class and notifications, Hannah was promoted to <strong>Senior Developer</strong> in May of 2018.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="card-deck member-deck">
-					<div id="tpatel85" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Tej Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/tpatel85.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name">Tej Patel</h3>
-							<h4 class="member-role">Software Developer</h4>
-							<p class="card-text member-text">
-								Tej is a first semester TA and first year Computer Engineering major at Georgia Tech. He enjoys working on cars, driving cars, and flying quadcopters.
-							</p>
-						</div>
-					</div>
-					<div id="dprofili3" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Daniel Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/dprofili3.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name text-center">Daniel Profili</h3>
-							<h4 class="member-role">Software Developer</h4>
-							<p class="card-text member-text">
-								Daniel is a second semester TA and a second year Chemical Engineering major. He enjoys Kit-Kats, sleeping, and Death Grips.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="card-deck member-deck">
-					<div id="jhtay3" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Justin Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/jhtay3.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name text-center">Justin Htay</h3>
-							<h4 class="member-role">Software Developer</h4>
-							<p class="card-text member-text">
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#theTeamAnchor"><i class="fas fa-users"></i> Meet The Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#whatWeDoAnchor"><i class="fas fa-code"></i> What We Do</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#whyWeDoAnchor"><i class="fab fa-rebel"></i> Why We Do It</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <button id="muteButton" data-play-music="0" class="btn btn-secondary">
+                        <i id="volumeOff" class="fas fa-volume-off"></i>
+                        <i id="volumeOn" class="hidden fas fa-volume-up"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="content" class="container-fluid">
+        <span class="anchor" id="theTeamAnchor"></span>
+        <div id="theTeam">
+            <div id="meetTheTeam" class="row section-header">
+                <div class="col-12 text-center">
+                    <h2 class="display-3"><i class="fas fa-users"></i><br />Meet The Team</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck member-deck">
+                    <div id="arao81" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Alexander Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/arao81.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name">Alexander Rao</h3>
+                            <h4 class="member-role">Project Manager</h4>
+                            <p class="card-text member-text">
+                                Alex has been a TA for three years, and currently leads the Software Development Team at Georgia Tech. Alex is a third year at The Georgia Institute of Technology, where he studies Electrical Engineering and Computer Science. Alex enjoys coding, hacking, and playing Call of Duty.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck member-deck">
+                    <div id="busluel3" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Baran Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/busluel3.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name text-center">Baran Usluel</h3>
+                            <h4 class="member-role">Senior Developer</h4>
+                            <p class="card-text member-text">
+                                Baran is a first semester TA. He is a first year Electrical Engineering major at Georgia Tech. He enjoys coding and making things. He is a bass singer in Georgia Tech's Chamber Choir, and he likes to play Ultimate in his free time.
+                                <br />
+                                In recognition of his work with <code>engine</code>, <code>generateFeedback</code>, and the Student Selector, Baran was promoted to <strong>Senior Developer</strong> in May of 2018.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="hwhite35" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Hannah Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/hwhite35.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name">Hannah White</h3>
+                            <h4 class="member-role">Senior Developer</h4>
+                            <p class="card-text member-text">
+                                Hannah White is a second year Biomedical Engineering Major with a Minor in CS at Georgia Tech. She has been a TA for two semesters. In her free time, she enjoys hanging out with friends, relaxing on the beach, and eating good food.
+                                <br />
+                                In recognition for her work in writing the <code>Plot</code> class and notifications, Hannah was promoted to <strong>Senior Developer</strong> in May of 2018.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck member-deck">
+                    <div id="tpatel85" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Tej Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/tpatel85.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name">Tej Patel</h3>
+                            <h4 class="member-role">Software Developer</h4>
+                            <p class="card-text member-text">
+                                Tej is a first semester TA and first year Computer Engineering major at Georgia Tech. He enjoys working on cars, driving cars, and flying quadcopters.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="dprofili3" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Daniel Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/dprofili3.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name text-center">Daniel Profili</h3>
+                            <h4 class="member-role">Software Developer</h4>
+                            <p class="card-text member-text">
+                                Daniel is a second semester TA and a second year Chemical Engineering major. He enjoys Kit-Kats, sleeping, and Death Grips.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck member-deck">
+                    <div id="jhtay3" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Justin Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/jhtay3.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name text-center">Justin Htay</h3>
+                            <h4 class="member-role">Software Developer</h4>
+                            <p class="card-text member-text">
                                                                 Justin is a fourth semester TA and a third year double major in Electrical Engineering and Mathematics. He enjoys chess, piano, video games, and cooking.
-							</p>
-						</div>
-					</div>
-					<div id="mnugent8" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Maggie Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/mnugent8.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name">Margaret Nugent</h3>
-							<h4 class="member-role">Software Developer</h4>
-							<p class="card-text member-text">
-								Maggie is a second semester TA, and a second year Biomedical Engineering student at The Georgia Institute of Technology. When she's not busy studying, Maggie enjoys watching Netflix, exploring Atlanta with her friends, and sleeping.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="card-deck member-deck">
-					<div id="tabraham7" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Tobin Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/tabraham7.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name">Tobin Abraham</h3>
-							<h4 class="member-role">Software Developer</h4>
-							<p class="card-text member-text">
-								A third year at Georgia Tech, Tobin is pursuing a degree in Chemical and Biomolecular Engineering. He has been a TA for 2 years. Tobin is passionate about coding, sings in the Georgia Tech Glee Club, and loves Star Wars.
-							</p>
-						</div>
-					</div>
-					<div id="pruiz7" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Paula Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/pruiz7.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name text-center">Paula Ruiz</h3>
-							<h4 class="member-role">Software Developer</h4>
-							<p class="card-text member-text">
-								 Paula Ruiz is a second year Computer Science major with a minor in German at Georgia Tech. She has been a TA for 2 semesters. In her free time, she loves to run, drink coffee, eat apples, and explore the world.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="card-deck member-deck">
-					<div id="aschmitt8" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Amanda Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/aschmitt8.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name">Amanda Schmitt</h3>
-							<h4 class="member-role">Senior Homework TA</h4>
-							<p class="card-text member-text">
-								Amanda is a 4th semester TA and the homework team STA. She is a 3rd year computer science major and social justice minor at the Georgia Tech Institute of University. In addition to MATLAB, she also loves cats and puzzles. 
-							</p>
-						</div>
-					</div>
-					
-					<div id="aho41" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<div class="card-img-top text-center mx-auto rounded-circle" style="font-size: 225px;">
-							<i class="fas fa-user-secret"></i>
-						</div>
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name text-center">Angela Ho</h3>
-							<h4 class="member-role">Software Developer</h4>
-							<p class="card-text member-text">
-								We don't know much about this developer yet...
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="card-deck member-deck">
-					<div id="vpuligundla3" class="card member-card bg-secondary col-sm-4 mx-auto">
-						<img alt="Virinchi Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/vpuligundla3.jpg" />
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name">Virinchi Puligundla</h3>
-							<h4 class="member-role">Software Developer</h4>
-							<p class="card-text member-text">
-								Virinchi is a first semester TA and a first year Aerospace Engineering major. He enjoys playing tennis and cricket and enjoys watching all sports other than baseball.
-							</p>
-						</div>
-					</div>
-					
-					<div id="mkumar77"  class="card member-card bg-secondary col-sm-4 mx-auto">
-						<div class="card-img-top text-center mx-auto rounded-circle" style="font-size: 225px;">
-							<i class="fas fa-user-secret"></i>
-						</div>
-						<div class="card-body member-body">
-							<h3 class="display-4 card-title member-name text-center">Meha Kumar</h3>
-							<h4 class="member-role">Software Developer</h4>
-							<p class="card-text member-text">
-								Hmmm... It appears this user has not written anything about themselves (yet!)...
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<span class="anchor" id="whatWeDoAnchor"></span>
-		<div id="whatWeDo">
-			<div class="row section-header">
-				<div class="col-12 text-center">
-					<h2 class="display-3"><i class="fas fa-code"></i><br />What We Do</h2>
-				</div>
-			</div>
-			<div class="row">
-				<p>
-					We are a team of CS 1371 TAs that develop software for the rest of the TA group. As a group, we are charged with creating and maintaining all internal software, which includes, among others:
-				</p>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<ul>
-						<li>The Autograder</li>
-						<li>The Regrade Portal</li>
-						<li>Get Most Recent Files</li>
-						<li>The General TA Index</li>
-						<li>The Homework Compiler</li>
-						<li>The Question Bank</li>
-						<li>Canvas</li>
-						<li>The Gradebook</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<p>
-					We are passionate about creating quality software, and will do our best to deliver on time, and exceed expectations. We are, however, also a group of learners. We will never know <em>everything</em>, but through diligence in our work and sincere enthusiasm to learn, we will better ourselves every day.
-				</p>
-			</div>
-		</div>
-		<span class="anchor" id="whyWeDoAnchor"></span>
-		<div id="whyWeDo">
-			<div class="row section-header">
-				<div class="col-12 text-center">
-					<h2 class="display-3"><i class="fab fa-rebel"></i><br />Why We Do It</h2>
-				</div>
-			</div>
-			<div class="row">
-				<p>
-					Software is what separates a good group of CS TAs from a great group of TAs. Without computerized aid, a group of TAs, no matter how large or how competent, can only move so fast. A lack of software help limits what we can teach. As such, we are driven by a sense of purpose, which can be summed up as follows:
-				</p>
-			</div>
-			<div class="row section-header">
-				<div class="col-12 text-center">
-					<span class="display-3">
-						Make Teaching Simple
-					</span>
-				</div>
-			</div>
-			<div class="row">
-				<p>
-					This drives everything we do. Each project, each documentation, and each line of code is an attempt to get closer to realizing this. We know that software can make a great TA group unstoppable, and so we shall strive to deliver helpful, quality software that makes a TA's life simple, intuitive, and maybe even fun! After all, nobody said developing software had to be boring <i class="fas fa-smile"></i>
-				</p>
-			</div>
-			<div class="row">
-				<p>
-					Additionally, we're also driven to learn more everyday. This team serves as a preparation for the "real world." Indeed, it seems that few, if any, universities that teach Computer Science also teach <em>Software Development</em>. Ironically, being able to develop better software together is something most employers expect of new hires on Day One. As such, it is our goal to "do things by the book" - in particular:
-				</p>
-			</div>
-			<div class="row">
-				<ul>
-					<li>We will use best practices when coding. We'll have sensible conventions for naming of objects</li>
-					<li>We will use a Version Control System. In our case, we shall use git in conjunction with <a href="https://github.gatech.edu/CS1371">GitHub</a></li>
-					<li>We will follow industry standards when it comes to security. We will learn and utilize security measures such as GPG signing keys</li>
-					<li>We will learn about unit testing, and we will make Unit Testing an integral part of our workflow</li>
-					<li>We will write concise, thorough, and meaningful documentation for all of our code</li>
-					<li>We will write detailed specifications throughout the development process, and we will keep these specifications up to date</li>
-					<li>We will engage in cordial debate, and will not be afraid to question a decision</li>
-				</ul>
-			</div>
-			<div class="row">
-				<p>
-					In an effort to accomplish these goals, we will use the following software. All software is either provided for free or through the Institute.
-				</p>
-			</div>
-			<div class="row">
-				<ul>
-					<li><a href="https://trello.com/">Trello</a> - A Team Management platform that allows everyone to instantly see our progress in any project. You can see our Trello Team <a href="https://trello.com/b/Lv2f0Klu">here</a></li>
-					<li><a href="https://github.gatech.edu">GitHub</a> - A git-based remote platform that facilitates working together on different projects. Our GitHub Organization can be found <a href="https://github.gatech.edu/CS1371">here</a></li>
-					<li><a href="https://mathworks.com/products/matlab.html">MATLAB</a> - The core of CS 1371, MATLAB will be our bread and butter. Wherever possible, our code will be written in MATLAB</li>
-					<li><a href="https://gnupg.org/">GPG (GnuPG)</a> - A free software that facilitates the creation and validation of encryption keys for signing our work. You can get our public keys <a download href="./resources/public.key">here</a></li>
-					<li><a href="https://slack.com/">Slack</a> - Our main communications framework, Slack will allow easy and free communication among the entire group. You can access our group <a href="https://techteamplayground.slack.com">here</a></li>
-					<li><a href="https://drive.google.com">Google Drive</a> - A free file hosting and editing platform, Google Drive allows simple methods for sharing and collaborating on common documents. To see our shared Drive, click <a href="https://drive.google.com/open?id=1-1Y5T8mHcmVND79gaC1RVNr2IrRYNM2-">here</a></li>
-					<li><a href="https://php.net">PHP</a> - An open-source server-side scripting language, PHP is used throughout Georgia Tech.</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="mnugent8" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Maggie Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/mnugent8.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name">Margaret Nugent</h3>
+                            <h4 class="member-role">Software Developer</h4>
+                            <p class="card-text member-text">
+                                Maggie is a second semester TA, and a second year Biomedical Engineering student at The Georgia Institute of Technology. When she's not busy studying, Maggie enjoys watching Netflix, exploring Atlanta with her friends, and sleeping.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck member-deck">
+                    <div id="tabraham7" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Tobin Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/tabraham7.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name">Tobin Abraham</h3>
+                            <h4 class="member-role">Software Developer</h4>
+                            <p class="card-text member-text">
+                                A third year at Georgia Tech, Tobin is pursuing a degree in Chemical and Biomolecular Engineering. He has been a TA for 2 years. Tobin is passionate about coding, sings in the Georgia Tech Glee Club, and loves Star Wars.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="pruiz7" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Paula Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/pruiz7.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name text-center">Paula Ruiz</h3>
+                            <h4 class="member-role">Software Developer</h4>
+                            <p class="card-text member-text">
+                                 Paula Ruiz is a second year Computer Science major with a minor in German at Georgia Tech. She has been a TA for 2 semesters. In her free time, she loves to run, drink coffee, eat apples, and explore the world.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck member-deck">
+                    <div id="aschmitt8" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Amanda Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/aschmitt8.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name">Amanda Schmitt</h3>
+                            <h4 class="member-role">Senior Homework TA</h4>
+                            <p class="card-text member-text">
+                                Amanda is a 4th semester TA and the homework team STA. She is a 3rd year computer science major and social justice minor at the Georgia Tech Institute of University. In addition to MATLAB, she also loves cats and puzzles. 
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="aho41" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <div class="card-img-top text-center mx-auto rounded-circle" style="font-size: 225px;">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name text-center">Angela Ho</h3>
+                            <h4 class="member-role">Software Developer</h4>
+                            <p class="card-text member-text">
+                                We don't know much about this developer yet...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-deck member-deck">
+                    <div id="vpuligundla3" class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <img alt="Virinchi Headshot" class="card-img-top rounded-circle mx-auto img-fluid member-image" src="resources/images/headshots/vpuligundla3.jpg" />
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name">Virinchi Puligundla</h3>
+                            <h4 class="member-role">Software Developer</h4>
+                            <p class="card-text member-text">
+                                Virinchi is a first semester TA and a first year Aerospace Engineering major. He enjoys playing tennis and cricket and enjoys watching all sports other than baseball.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="mkumar77"  class="card member-card bg-secondary col-sm-4 mx-auto">
+                        <div class="card-img-top text-center mx-auto rounded-circle" style="font-size: 225px;">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="card-body member-body">
+                            <h3 class="display-4 card-title member-name text-center">Meha Kumar</h3>
+                            <h4 class="member-role">Software Developer</h4>
+                            <p class="card-text member-text">
+                                Hmmm... It appears this user has not written anything about themselves (yet!)...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="anchor" id="whatWeDoAnchor"></span>
+        <div id="whatWeDo">
+            <div class="row section-header">
+                <div class="col-12 text-center">
+                    <h2 class="display-3"><i class="fas fa-code"></i><br />What We Do</h2>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    We are a team of CS 1371 TAs that develop software for the rest of the TA group. As a group, we are charged with creating and maintaining all internal software, which includes, among others:
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul>
+                        <li>The Autograder</li>
+                        <li>The Regrade Portal</li>
+                        <li>Get Most Recent Files</li>
+                        <li>The General TA Index</li>
+                        <li>The Homework Compiler</li>
+                        <li>The Question Bank</li>
+                        <li>Canvas</li>
+                        <li>The Gradebook</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    We are passionate about creating quality software, and will do our best to deliver on time, and exceed expectations. We are, however, also a group of learners. We will never know <em>everything</em>, but through diligence in our work and sincere enthusiasm to learn, we will better ourselves every day.
+                </p>
+            </div>
+        </div>
+        <span class="anchor" id="whyWeDoAnchor"></span>
+        <div id="whyWeDo">
+            <div class="row section-header">
+                <div class="col-12 text-center">
+                    <h2 class="display-3"><i class="fab fa-rebel"></i><br />Why We Do It</h2>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Software is what separates a good group of CS TAs from a great group of TAs. Without computerized aid, a group of TAs, no matter how large or how competent, can only move so fast. A lack of software help limits what we can teach. As such, we are driven by a sense of purpose, which can be summed up as follows:
+                </p>
+            </div>
+            <div class="row section-header">
+                <div class="col-12 text-center">
+                    <span class="display-3">
+                        Make Teaching Simple
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    This drives everything we do. Each project, each documentation, and each line of code is an attempt to get closer to realizing this. We know that software can make a great TA group unstoppable, and so we shall strive to deliver helpful, quality software that makes a TA's life simple, intuitive, and maybe even fun! After all, nobody said developing software had to be boring <i class="fas fa-smile"></i>
+                </p>
+            </div>
+            <div class="row">
+                <p>
+                    Additionally, we're also driven to learn more everyday. This team serves as a preparation for the "real world." Indeed, it seems that few, if any, universities that teach Computer Science also teach <em>Software Development</em>. Ironically, being able to develop better software together is something most employers expect of new hires on Day One. As such, it is our goal to "do things by the book" - in particular:
+                </p>
+            </div>
+            <div class="row">
+                <ul>
+                    <li>We will use best practices when coding. We'll have sensible conventions for naming of objects</li>
+                    <li>We will use a Version Control System. In our case, we shall use git in conjunction with <a href="https://github.gatech.edu/CS1371">GitHub</a></li>
+                    <li>We will follow industry standards when it comes to security. We will learn and utilize security measures such as GPG signing keys</li>
+                    <li>We will learn about unit testing, and we will make Unit Testing an integral part of our workflow</li>
+                    <li>We will write concise, thorough, and meaningful documentation for all of our code</li>
+                    <li>We will write detailed specifications throughout the development process, and we will keep these specifications up to date</li>
+                    <li>We will engage in cordial debate, and will not be afraid to question a decision</li>
+                </ul>
+            </div>
+            <div class="row">
+                <p>
+                    In an effort to accomplish these goals, we will use the following software. All software is either provided for free or through the Institute.
+                </p>
+            </div>
+            <div class="row">
+                <ul>
+                    <li><a href="https://trello.com/">Trello</a> - A Team Management platform that allows everyone to instantly see our progress in any project. You can see our Trello Team <a href="https://trello.com/b/Lv2f0Klu">here</a></li>
+                    <li><a href="https://github.gatech.edu">GitHub</a> - A git-based remote platform that facilitates working together on different projects. Our GitHub Organization can be found <a href="https://github.gatech.edu/CS1371">here</a></li>
+                    <li><a href="https://mathworks.com/products/matlab.html">MATLAB</a> - The core of CS 1371, MATLAB will be our bread and butter. Wherever possible, our code will be written in MATLAB</li>
+                    <li><a href="https://gnupg.org/">GPG (GnuPG)</a> - A free software that facilitates the creation and validation of encryption keys for signing our work. You can get our public keys <a download href="./resources/public.key">here</a></li>
+                    <li><a href="https://slack.com/">Slack</a> - Our main communications framework, Slack will allow easy and free communication among the entire group. You can access our group <a href="https://techteamplayground.slack.com">here</a></li>
+                    <li><a href="https://drive.google.com">Google Drive</a> - A free file hosting and editing platform, Google Drive allows simple methods for sharing and collaborating on common documents. To see our shared Drive, click <a href="https://drive.google.com/open?id=1-1Y5T8mHcmVND79gaC1RVNr2IrRYNM2-">here</a></li>
+                    <li><a href="https://php.net">PHP</a> - An open-source server-side scripting language, PHP is used throughout Georgia Tech.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-	<footer class="bg-dark container-fluid">
-		<div class="row">
-			<div class="col-12 text-center">
-				<p>
-					Lovingly maintained by the <a href="https://github.gatech.edu/CS1371">CS 1371 Software Development Team</a>. This page was created using
-					<a href="https://jquery.com/">JQuery</a>,
-					<a href="https://getbootstrap.com/">Bootstrap</a>,
-					<a href="http://fittextjs.com/">FitText</a>, and
-					<a href="https://fontawesome.com/">Font Awesome</a>.
-				</p>
-				<p>
-					Want to join?
-					<a href="mailto:arao81@gatech.edu">Send us an email</a>.
-				</p>
-			</div>
-		</div>
-	</footer>
+    <footer class="bg-dark container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>
+                    Lovingly maintained by the <a href="https://github.gatech.edu/CS1371">CS 1371 Software Development Team</a>. This page was created using
+                    <a href="https://jquery.com/">JQuery</a>,
+                    <a href="https://getbootstrap.com/">Bootstrap</a>,
+                    <a href="http://fittextjs.com/">FitText</a>, and
+                    <a href="https://fontawesome.com/">Font Awesome</a>.
+                </p>
+                <p>
+                    Want to join?
+                    <a href="mailto:arao81@gatech.edu">Send us an email</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
