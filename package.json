@@ -1,5 +1,6 @@
 {
   "name": "software-development",
+  "homepage" : "https://github.gatech.edu/pages/CS1371/software-development/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
