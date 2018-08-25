@@ -12,7 +12,7 @@ class Developer extends React.Component {
                 <hr />
                 <p className="bio">{this.props.bio}</p>
                 
-                <a href={"keys/" + this.props.id} download><FontAwesomeIcon className="key" icon={faKey} /></a>
+                <a href={"keys/" + this.props.id + ".asc"} download><FontAwesomeIcon className="key" icon={faKey} /></a>
                 <a href={"mailto:" + this.props.id + "@gatech.edu"}><FontAwesomeIcon className="email" icon={faEnvelope} /></a>
             </div>
         );
