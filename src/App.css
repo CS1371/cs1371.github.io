@@ -1,28 +1,89 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.developers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
+.headshot {
+  width: 100%;
+  max-width: 256px;
+  max-height: 256px;
+  border-radius: 50%;
+  transition: border-radius .1s ease-in;
+}
+
+.developer:hover .headshot {
+  border-radius: 2.5%;
+  transition: border-radius .5s ease-out;
+}
+
+.title {
+  font-weight: 100;
+}
+
+.developer {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
   text-align: center;
+  color: white;
+  width: 384px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.developer:hover .bio {
+  color: white;
+  transition: color .5s;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.bio {
+  word-wrap: normal;
+  color: transparent;
+}
+
+.developer:hover .key,
+.developer:hover .email {
+  color: white;
+  transition: color .5s;
+}
+.key,
+.email {
+  color: transparent;
+  padding: 5px;
+  font-size: 150%;
+}
+
+.developer hr {
+  width: 0px;
+  visibility: hidden;
+}
+
+.developer:hover hr {
+  width: 100%;
+  visibility: visible;
+  transition: width .5s;
+}
+
+#logo {
+  width: 128px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+#logo:hover {
+  animation-name: showTitle;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+body {
+  background: linear-gradient(141deg, rgb(67, 90, 158), #283C86 30%, #4E4E8A 48%, #379B9B 65%, #41B774 85%, #45A247);
+  font-family: 'Open Sans', sans-serif;
 }

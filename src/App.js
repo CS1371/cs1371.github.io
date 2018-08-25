@@ -1,20 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Developer from './Developer'
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      developers: []
+    };
+  }
+
+  componentDidMount() {
+    fetch('./developers.json')
+    .then(response => response.json())
+    .then(data => this.setState({developers: data}));
+  }
+
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+      const developers = [];
+      for (let i = 0; i < this.state.developers.length; i++) {
+        const dev = this.state.developers[i];
+        developers.push(
+          <Developer key={dev.gtUsername} id={dev.gtUsername} name={dev.name} title={dev.title} bio={dev.bio}  />
+        );
+      }
+      const devs = <div className="developers">{developers}</div>;
+      const title = <h1>CS 1371 Software Development</h1>;
+      const logo = <img src="branding/CourseBrand.png" alt="logo" id="logo" />;
+      return <div className="container">{logo}{title}{devs}</div>;
+    
   }
 }
 
