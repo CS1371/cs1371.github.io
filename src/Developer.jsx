@@ -1,11 +1,11 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faKey, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faKey, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import isMobile from "react-device-detect";
 class Developer extends React.Component {
     render() {
         return (
-            <div className="developer">
+            <div className={isMobile ? "developer mobile" : "developer"}>
                 <img className="headshot" alt={this.props.name + " headshot"} src={"headshots/" + this.props.id + ".jpg"} />
                 <h2 className="name">{this.props.name}</h2>
                 <h3 className="title">{this.props.title}</h3>
@@ -19,4 +19,4 @@ class Developer extends React.Component {
     }
 }
 
-export default Developer
+export default Developer;

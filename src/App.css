@@ -16,7 +16,8 @@
   transition: border-radius .1s ease-in;
 }
 
-.developer:hover .headshot {
+.developer:hover .headshot,
+.developer.mobile .headshot {
   border-radius: 2.5%;
   transition: border-radius .5s ease-out;
 }
@@ -34,7 +35,8 @@
   width: 384px;
 }
 
-.developer:hover .bio {
+.developer:hover .bio,
+.developer.mobile .bio {
   color: white;
   transition: color .5s;
 }
@@ -45,7 +47,9 @@
 }
 
 .developer:hover .key,
-.developer:hover .email {
+.developer:hover .email,
+.developer.mobile .email,
+.developer.mobile .key {
   color: white;
   transition: color .5s;
 }
@@ -61,7 +65,8 @@
   visibility: hidden;
 }
 
-.developer:hover hr {
+.developer:hover hr,
+.developer.mobile hr {
   width: 100%;
   visibility: visible;
   transition: width .5s;
@@ -77,10 +82,6 @@
 h1 {
   text-align: center;
   color: white;
-}
-
-#logo:hover {
-  animation-name: showTitle;
 }
 
 body {
