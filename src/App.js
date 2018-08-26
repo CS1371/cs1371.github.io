@@ -8,7 +8,8 @@ class App extends Component {
     super(props);
 
     this.state = {
-      developers: [
+      developers: []
+      /*
         {
             gtUsername: "arao81",
             name: "Alexander Rao",
@@ -76,7 +77,14 @@ class App extends Component {
             bio: "Amanda is a 4th semester TA and the homework team STA. She is a 3rd year computer science major and social justice minor at the Georgia Tech Institute of University. In addition to MATLAB, she also loves cats and puzzles."
         }
     ]
+    */
     };
+  }
+
+  componentDidMount() {
+    fetch('developers.json')
+    .then(response => response.json())
+    .then(data => this.setState({developers: data}));
   }
 
   render() {
