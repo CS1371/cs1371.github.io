@@ -1,7 +1,7 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faKey, faEnvelope} from '@fortawesome/free-solid-svg-icons'
-import isMobile from "react-device-detect";
+import {isMobile} from "react-device-detect";
 class Developer extends React.Component {
     render() {
         return (
