@@ -83,10 +83,6 @@ class App extends Component {
 
   componentDidMount() {
     fetch('developers.json')
-    .then(response => {
-      alert(response);
-      return response;
-    })
     .then(response => response.json())
     .then(data => this.setState({developers: data}));
   }
@@ -96,7 +92,7 @@ class App extends Component {
       for (let i = 0; i < this.state.developers.length; i++) {
         const dev = this.state.developers[i];
         developers.push(
-          <Developer key={dev.gtUsername} id={dev.gtUsername} name={dev.name} title={dev.title} bio={dev.bio}  />
+          <Developer key={dev.id} id={dev.id} name={dev.name} title={dev.title} bio={dev.bio}  />
         );
       }
       const devs = <div className="developers">{developers}</div>;
