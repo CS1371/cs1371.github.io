@@ -83,6 +83,10 @@ class App extends Component {
 
   componentDidMount() {
     fetch('developers.json')
+    .then(response => {
+      alert(response);
+      return response;
+    })
     .then(response => response.json())
     .then(data => this.setState({developers: data}));
   }
