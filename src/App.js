@@ -75,6 +75,13 @@ class App extends Component {
             name: "Amanda Schmitt",
             title: "Developer",
             bio: "Amanda is a 4th semester TA and the homework team STA. She is a 3rd year computer science major and social justice minor at the Georgia Tech Institute of University. In addition to MATLAB, she also loves cats and puzzles."
+        },
+        {
+            gtUsername: "prathaur3",
+            name: "Prithvi Rathaur",
+            title: "Developer",
+            bio: ""
+    
         }
     ]
     */
